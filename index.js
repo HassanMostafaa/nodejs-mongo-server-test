@@ -8,7 +8,6 @@ mongoose
   .connect(db, { useNewUrlParser: true })
   .then(() => {
     app.listen(port, () => {
-      console.log("Database Connected");
       console.log(`Live at http://localhost:${port}`);
     });
   })
